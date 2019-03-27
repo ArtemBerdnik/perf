@@ -26,17 +26,14 @@ public class TimeMeasurements {
         driver.get(url);
         long finish = System.currentTimeMillis();
 
-        System.out.println(String.format("%d", TimeUnit.MILLISECONDS.toSeconds(finish - start)));
         arr.add(String.format("%d", TimeUnit.MILLISECONDS.toSeconds(finish - start)));
 
         start = System.currentTimeMillis();
         test.click();
         finish = System.currentTimeMillis();
 
-        System.out.println(String.format("%d", TimeUnit.MILLISECONDS.toSeconds(finish - start)));
         arr.add(String.format("%d", TimeUnit.MILLISECONDS.toSeconds(finish - start)));
 
-        arr.forEach(System.out::println);
         return arr.toArray();
     }
 }

@@ -33,7 +33,7 @@ public class Main {
 
     }
 
-//    public static void main(String[] args) throws IOException {
-//        //ExcelReaderWriter.writeToXlsx();
-//    }
+    public static void main(String[] args) throws IOException {
+       // ExcelReaderWriter.readFromXlsx();
+    }
 }
